@@ -21,13 +21,14 @@
 <body>
   <div id="wrapper">
     <div class="topbar" style="position: absolute; top:0;">
-      <!-- 왼쪽 메뉴 -->
+      <!-- 사이드바 바디 -->
       <div class="left side-menu">
         <div class="sidebar-inner">
           <div id="sidebar-menu">
           </div>
         </div>
       </div>
+      <!-- 사이드바 메뉴 -->
       <div class="left_sub_menu">
         <ul class="sub_menu">
           <h2> 전국시도단위 <br> 소비정보데이터 </h2>
@@ -44,6 +45,7 @@
         </ul>
       </div>
     </div>
+    <!-- 데이터 표시 영역 -->
     <div class="box">
       <div class="container" id="user_div">
         <canvas id="seoul_user"></canvas>
@@ -57,83 +59,11 @@
         <canvas id="jeju_user"></canvas>
       </div>
     </div>
+    <!-- 스크립트 영역 : 헤드 상단에 위치하면 오류가 발생해 하단에 위치함 -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
     <script type="text/javascript" src="../sidebar.js"></script>
     <script type="text/javascript" src="../table.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <!-- <script type="text/javascript">
-      function seoul_user() {
-      const seoul_user = document.getElementById('seoul_user');    
-          new Chart(seoul_user, {
-            type: 'bar',
-            data: {
-              labels: ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '제주'],
-              datasets: [{
-                label: '서울',
-                data: [8571, 8635, 8687, 8737, 8807, 8852, 8925, 8989, 8993],
-                backgroundColor: [
-                  'rgba(255, 99, 132, 1)',
-                  'rgba(54, 162, 235, 1)',
-                  'rgba(255, 206, 86, 1)',
-                  'rgba(75, 192, 192, 1)',
-                  'rgba(153, 102, 255, 1)',
-                  'rgba(255, 159, 64, 1)'
-                ],
-                borderColor: [
-                  'rgba(255, 99, 132, 1)',
-                  'rgba(54, 162, 235, 1)',
-                  'rgba(255, 206, 86, 1)',
-                  'rgba(75, 192, 192, 1)',
-                  'rgba(153, 102, 255, 1)',
-                  'rgba(255, 159, 64, 1)'
-                ],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              scales: {
-                y: {
-                  beginAtZero: true
-                }
-              }
-            }
-          });
-          new Chart(seoul_user, {
-            type: 'bar',
-            data: {
-              labels: ['서울', '부산', '대구', '인천', '광주', '대전', '울산', '세종', '제주'],
-              datasets: [{
-                label: '서울',
-                data: [8571, 8635, 8687, 8737, 8807, 8852, 8925, 8989, 8993],
-                backgroundColor: [
-                  'rgba(255, 99, 132, 1)',
-                  'rgba(54, 162, 235, 1)',
-                  'rgba(255, 206, 86, 1)',
-                  'rgba(75, 192, 192, 1)',
-                  'rgba(153, 102, 255, 1)',
-                  'rgba(255, 159, 64, 1)'
-                ],
-                borderColor: [
-                  'rgba(255, 99, 132, 1)',
-                  'rgba(54, 162, 235, 1)',
-                  'rgba(255, 206, 86, 1)',
-                  'rgba(75, 192, 192, 1)',
-                  'rgba(153, 102, 255, 1)',
-                  'rgba(255, 159, 64, 1)'
-                ],
-                borderWidth: 1
-              }]
-            },
-            options: {
-              scales: {
-                y: {
-                  beginAtZero: true
-                }
-              }
-            }
-          });
-      }
-    </script> -->
 </body>
 
 </html>
