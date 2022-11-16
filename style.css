@@ -1,0 +1,28 @@
+body{
+  background-color: rgb(53, 53, 53);}
+
+.center{
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 200px;
+  width: 300px;
+  height: 250px;
+  background-color: white;
+  box-shadow: 3px 3px 3px black;
+}
+.text{
+  font-size: 25px;
+}
+
+button {
+  border: none;
+  margin-top: 30px;
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+  background: linear-gradient( #c5eee2, #f9d4f4 );
+}
+a {
+  text-decoration-line: none;
+  color: black;
+}
