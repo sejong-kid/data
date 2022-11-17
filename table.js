@@ -12,19 +12,19 @@ function getGraph() {
         backgroundColor: [
           'rgba(255, 206, 86, 1)'
         ],
-        borderColor: [
-          'rgba(255, 206, 86, 1)'
-        ],
-        borderWidth: 1
+
+        borderWidth: 3,
+        boderSkipped: false,
       },
       {
         label: '백 명',
         data: [45, 49, 55, 40, 43, 48, 10, 15, 17],
-        backgroundColor: 'rgba(255, 99, 132, 1)',
-        boderColor: 'rgba(255, 99, 132, 1)',
+        backgroundColor: ['rgba(255, 99, 132, 1)'],
+        bprderColor: 'transparent',
+        borderWidth: 3,
 
-      }
-
+        boderSkipped: false,      
+      },
       ]
     },
     options: {
@@ -65,10 +65,13 @@ function getGraph() {
       },
       plugins: {
         title: {
+          color: 'rgba(255, 255, 255, 2)',
           display: true,
-          text: '서울',
-
-        }
+          text: '서울의 월별 카드 보유자 수',
+        },
+        legend: {
+          display: true,
+          position: 'right'},
       }
     },
   },);
