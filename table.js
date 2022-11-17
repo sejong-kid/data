@@ -1,8 +1,5 @@
-function getGraph() {
-  let timeList = [];
-  let posList = ["seoul_user", "busan_user", "daegu_user", "incheon_user", "gwangju_user", "daejeon_user"];
-
-  new Chart(document.getElementById("seoul_user"), {
+function seoul() {
+  new Chart(document.getElementById("seoul"), {
     type: 'bar',
     data: {
       labels: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월'],
@@ -12,7 +9,6 @@ function getGraph() {
         backgroundColor: [
           'rgba(255, 206, 86, 1)'
         ],
-
         borderWidth: 3,
         boderSkipped: false,
       },
@@ -73,43 +69,45 @@ function getGraph() {
           display: true,
           position: 'right'},
       }
-    },
-  },);
-  new Chart(document.getElementById("busan_user"), {
-    type: 'bar',
-    data: {
-      labels: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월'],
-      datasets: [{
-        label: '부산',
-        data: [8273, 8452, 9269, 5483, 5065, 5942, 3804, 3922, 3293],
-        backgroundColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)'
-        ],
-        borderColor: [
-          'rgba(255, 99, 132, 1)',
-          'rgba(54, 162, 235, 1)',
-          'rgba(255, 206, 86, 1)',
-          'rgba(75, 192, 192, 1)',
-          'rgba(153, 102, 255, 1)',
-          'rgba(255, 159, 64, 1)'
-        ],
-        borderWidth: 1
-      }]
-    },
-    options: {
-      scales: {
-        y: {
-          beginAtZero: true
+    },},);}
+function busan() {
+  new Chart(document.getElementById("busan"), {
+      type: 'bar',
+      data: {
+        labels: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월'],
+        datasets: [{
+          label: '부산',
+          data: [8273, 8452, 9269, 5483, 5065, 5942, 3804, 3922, 3293],
+          backgroundColor: [
+            'rgba(255, 99, 132, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(255, 159, 64, 1)'
+          ],
+          borderColor: [
+            'rgba(255, 99, 132, 1)',
+            'rgba(54, 162, 235, 1)',
+            'rgba(255, 206, 86, 1)',
+            'rgba(75, 192, 192, 1)',
+            'rgba(153, 102, 255, 1)',
+            'rgba(255, 159, 64, 1)'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
         }
       }
-    }
   });
-  new Chart(document.getElementById("daegu_user"), {
+}
+function daegu() {
+  new Chart(document.getElementById("daegu"), {
     type: 'bar',
     data: {
       labels: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월'],
@@ -144,7 +142,9 @@ function getGraph() {
       }
     }
   });
-  new Chart(document.getElementById("incheon_user"), {
+}
+function incheon() {
+  new Chart(document.getElementById("incheon"), {
     type: 'bar',
     data: {
       labels: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월'],
@@ -178,7 +178,9 @@ function getGraph() {
       }
     }
   });
-  new Chart(document.getElementById("gwangju_user"), {
+}
+function gwangju(){
+  new Chart(document.getElementById("gwangju"), {
     type: 'bar',
     data: {
       labels: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월'],
@@ -212,7 +214,10 @@ function getGraph() {
       }
     }
   });
-  new Chart(document.getElementById("daejeon_user"), {
+}
+
+function daejeon(){
+  new Chart(document.getElementById("daejeon"), {
     type: 'bar',
     data: {
       labels: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월'],
@@ -246,7 +251,9 @@ function getGraph() {
       }
     }
   });
-  new Chart(document.getElementById("ulsan_user"), {
+}
+function ulsan(){
+  new Chart(document.getElementById("ulsan"), {
     type: 'bar',
     data: {
       labels: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월'],
@@ -280,7 +287,9 @@ function getGraph() {
       }
     }
   });
-  new Chart(document.getElementById("sejong_user"), {
+}
+function sejong(){
+  new Chart(document.getElementById("sejong"), {
     type: 'bar',
     data: {
       labels: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월'],
@@ -314,7 +323,9 @@ function getGraph() {
       }
     }
   });
-  new Chart(document.getElementById("jeju_user"), {
+}
+function jeju(){
+  new Chart(document.getElementById("jeju"), {
     type: 'bar',
     data: {
       labels: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월'],
@@ -348,5 +359,4 @@ function getGraph() {
       }
     }
   });
-
 }

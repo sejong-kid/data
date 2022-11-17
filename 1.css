@@ -129,17 +129,16 @@ ul {
 .body2 body {
   margin: 0 auto;
 }
-.container {
-  scale: 80%;
-  display: block;
-}
-
-canvas{
-  display: inline-block;
-  color: #fff;
-  margin-left: 200px;
-}
 
 .box div{
   margin: 0 auto;
+}
+
+.button{
+  margin: 0 auto;
+
+}
+
+canvas {
+  margin-left: 300px;
 }

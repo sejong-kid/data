@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- 외부 스타일시트 적용 -->
   <link rel="stylesheet" href="../1.css">
+  <link rel="stylesheet" href="../slides.css">
 
   <!-- java error 수정 코드 -->
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -33,37 +34,60 @@
         <ul class="sub_menu">
           <h2> 전국시도단위 <br> 소비정보데이터 </h2>
           <ul class="big_menu">
-            <li type="button" id="btn1" onclick="getGraph()">카드보유자수<i class="arrow fas fa-angle-right"></i></li>
-            <li type="button" id="2">평균카드한도</a><i class="arrow fas fa-angle-right"></i></li>
-            <li type="button" id="3">카드이용금액</a><i class="arrow fas fa-angle-right"></i></li>
-            <li type="button" id="4">신용이용금액</a><i class="arrow fas fa-angle-right"></i></li>
-            <li type="button" id="5">일시불이용금액</a><i class="arrow fas fa-angle-right"></i></li>
-            <li type="button" id="6">할부이용금액</a><i class="arrow fas fa-angle-right"></i></li>
-            <li type="button" id="7">현금서비스이용금액</a><i class="arrow fas fa-angle-right"></i></li>
-            <li type="button" id="8">해외소비금액</a><i class="arrow fas fa-angle-right"></i></li>
+            <li type="button" id=" list "onclick="seoul()"       >   서울  </li>
+            <li type="button" id=" list "onclick="busan()"       >   부산  </li>
+            <li type="button" id=" list "onclick="daegu()"       >   대구  </li>
+            <li type="button" id=" list "onclick="incheon()"     >   인천  </li>
+            <li type="button" id=" list "onclick="gwangju()"     >   광주  </li>
+            <li type="button" id=" list "onclick="daejeon()"     >   대전  </li>
+            <li type="button" id=" list "onclick="ulsan()"       >   울산  </li>
+            <li type="button" id=" list "onclick="sejong()"      >   세종  </li>
+            <li type="button" id=" list "onclick="gyeonggi()"    >   경기  </li>
+            <li type="button" id=" list "onclick="gangwon()"     >   강원  </li>
+            <li type="button" id=" list "onclick="chungbuk()"    >   충북  </li>
+            <li type="button" id=" list "onclick="chungnam()"    >   충남  </li>
+            <li type="button" id=" list "onclick="jeonbuk()"     >   전북  </li>
+            <li type="button" id=" list "onclick="jeonnam()"     >   전남  </li>
+            <li type="button" id=" list "onclick="gyeongbuk()"   >   경북  </li>
+            <li type="button" id=" list "onclick="gyeongnam()"   >   경남  </li>
+            <li type="button" id=" list "onclick="jeju()"        >   제주  </li>
           </ul>
         </ul>
       </div>
     </div>
     <!-- 데이터 표시 영역 -->
     <div class="box">
-      <div class="container" id="user_div">
-        <canvas id="seoul_user"></canvas>
-        <canvas id="busan_user"></canvas>
-        <canvas id="daegu_user"></canvas>
-        <canvas id="incheon_user"></canvas>
-        <canvas id="gwangju_user"></canvas>
-        <canvas id="daejeon_user"></canvas>
-        <canvas id="ulsan_user"></canvas>
-        <canvas id="sejong_user"></canvas>
-        <canvas id="jeju_user"></canvas>
+      <div id="slideShow">
+        <button id="btn1">
+          1번
+        </button>
+        <ul class="slides">
+          <div class="container" id="user_div">
+              <li><canvas id=   "seoul"     ></canvas></li>
+
+              <li><canvas id=   "busan"     ></canvas></li>
+
+              <li><canvas id=   "daegu"     ></canvas></li>
+
+
+              <li><canvas id=   "incheon"   ></canvas></li>
+
+              <li><canvas id=   "gwangju"   ></canvas></li>
+              <li><canvas id=   "daejeon"   ></canvas></li>
+              <li><canvas id=   "ulsan"     ></canvas></li>
+              <li><canvas id=   "sejong"    ></canvas></li>
+              <li><canvas id=   "jeju"      ></canvas></li>
+        </ul>
       </div>
     </div>
-    <!-- 스크립트 영역 : 헤드 상단에 위치하면 오류가 발생해 하단에 위치함 -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
-    <script type="text/javascript" src="../sidebar.js"></script>
-    <script type="text/javascript" src="../table.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </div>
+  <!-- 스크립트 영역 : 헤드 상단에 위치하면 오류가 발생해 하단에 위치함 -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+  <script type="text/javascript" src="../sidebar.js"></script>
+  <!-- <script type="text/javascript" src="../slides.js"></script> -->
+  <script type="text/javascript" src="../table.js"></script>
+  <script type="text/javascript" src="../show.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 
 </html>
