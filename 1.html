@@ -33,8 +33,7 @@
       <div class="left_sub_menu">
         <ul class="sub_menu">
           <h2> 전국시도단위 <br> 소비정보데이터 </h2>
-          <ul class="big_menu">
-            <li type="button" id=" list "onclick="seoul()"       >   서울  </li>
+            <li type="button" id=" list "onclick="seoul_chart()"       >   서울  </li>
             <li type="button" id=" list "onclick="busan()"       >   부산  </li>
             <li type="button" id=" list "onclick="daegu()"       >   대구  </li>
             <li type="button" id=" list "onclick="incheon()"     >   인천  </li>
@@ -58,25 +57,17 @@
     <!-- 데이터 표시 영역 -->
     <div class="box">
       <div id="slideShow">
-        <button id="btn1">
-          1번
-        </button>
         <ul class="slides">
           <div class="container" id="user_div">
-              <li><canvas id=   "seoul"     ></canvas></li>
-
-              <li><canvas id=   "busan"     ></canvas></li>
-
-              <li><canvas id=   "daegu"     ></canvas></li>
-
-
-              <li><canvas id=   "incheon"   ></canvas></li>
-
-              <li><canvas id=   "gwangju"   ></canvas></li>
-              <li><canvas id=   "daejeon"   ></canvas></li>
-              <li><canvas id=   "ulsan"     ></canvas></li>
-              <li><canvas id=   "sejong"    ></canvas></li>
-              <li><canvas id=   "jeju"      ></canvas></li>
+              <canvas id=   "myChar"     ></canvas>
+              <canvas id=   "busan"     ></canvas>
+              <canvas id=   "daegu"     ></canvas>
+              <canvas id=   "incheon"   ></canvas>
+              <canvas id=   "gwangju"   ></canvas>
+              <canvas id=   "daejeon"   ></canvas>
+              <canvas id=   "ulsan"     ></canvas>
+              <canvas id=   "sejong"    ></canvas>
+              <canvas id=   "jeju"      ></canvas>
         </ul>
       </div>
     </div>
@@ -86,7 +77,7 @@
   <script type="text/javascript" src="../sidebar.js"></script>
   <!-- <script type="text/javascript" src="../slides.js"></script> -->
   <script type="text/javascript" src="../table.js"></script>
-  <script type="text/javascript" src="../show.js"></script>
+  <!-- <script type="text/javascript" src="../show.js"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 
